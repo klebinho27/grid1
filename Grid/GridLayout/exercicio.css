@@ -1,0 +1,48 @@
+/*Estilos gerais*/
+
+.item{
+    margin: 5px;
+    background-color: red;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.grid, .grid2{ 
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/*grid*/
+.grid2{
+    grid-template-columns: 1fr 1fr ;
+}
+
+.grid, .grid2{
+    display: grid;
+}
+
+.grid-tamplate-columns-1{
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.grid-tamplate-columns-2{
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid-tamplate-columns-3{
+    grid-template-columns:minmax(200px, 1fr) 1fr 1fr;
+}
+.grid-tamplate-columns-4{
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+/*row*/
+
+.grid-template-row-1{
+    grid-template-rows: 50px 100px 50px 150px;
+
+}
+
+

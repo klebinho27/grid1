@@ -1,0 +1,66 @@
+/*grid formatação*/
+
+.item{
+    margin: 5px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 1rem;
+    }
+    
+    .grid{
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid #000;
+    }
+     h1{
+        text-align: center;
+     }
+    
+    
+     /*Grid Layout*/
+    
+     .grid{
+        display: grid;
+     }
+    
+     .grid-tamplate-areas-1{
+        grid-template-areas: 
+        "logo nav nav"
+        "sidenav content advert"
+        "sidenav footer footer";
+     }
+    
+     .logo{
+        grid-area: logo;
+     }
+    
+     .nav{
+        grid-area: nav;
+    }
+    
+    .sidenav{
+        grid-area: sidenav;
+    }
+    .content{
+        grid-area: content;
+    }
+    
+    .advert{
+        grid-area: advert;
+    }
+    
+    .footer{
+        grid-area: footer;
+    }
+
+@media  (min-width: 320px) and (max-width:799px) {
+
+     .grid-tamplate-areas-1{
+        grid-template-areas: 
+        "logo logo "
+        "nav nav "
+        "content content"
+        "sidenav advert"
+         "footer footer";
+     }
+    }
